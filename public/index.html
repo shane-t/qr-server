@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>To Do App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+    />
+  </head>
+
+  <body>
+
+    <!-- REMOVE MESSAGE BEGIN -->
+
+    <div class="container-lg mb-6">
+      <div style="background-color: rgb(4 0 255 / 6%); padding: 15px; border-radius: 10px; margin-top: 10px;">
+        <div class="row">
+          <div class="col col-12 col-md-2 text-center d-inline">
+            <img src="https://adaptable.io/img/party-popper.svg" style="max-width: 150px;" />
+          </div>
+          <div class="col col-12 col-md-8 text-center">
+            <h2 class="display-4 mt-3">Congratulations!</h2>
+            <p style="font-size: 1.5rem">
+              Your app is now running on
+            </p>
+            <img src="https://adaptable.io/img/color lockup.svg" style="max-width: 200px;" />
+          </div>
+          <div class="col col-md-2 text-center d-none d-md-block">
+            <img src="https://adaptable.io/img/party-popper.svg" style="max-width: 150px;" />
+          </div>
+        </div>
+
+        <h2 class="display-5 text-center mt-5">What's Next?</h2>
+
+        <p class="text-center width-limited-text mb-4">
+          Get started by checking out your new app.
+          Add tasks to your To Do List <a href="#todo">below</a>.
+          They're saved to your new MongoDB instance via your REST API based
+          on <a href="https://nestjs.com" target="_blank">NestJS</a> and
+          <a href="https://mongoosejs.com" target="_blank">Mongoose</a>.
+          Then, try out some of the suggestions in the pre-populated To Do items.
+        </p>
+
+        <div class="row mt-4">
+          <p class="text-center">
+            See the <a href="https://adaptable.io/docs/starters/nestjs-mongo-starter#what-s-next" target="_blank">NestJS + MongoDB Starter Guide</a> for step-by-step
+            instructions for each.
+          </p>
+          <p class="text-center">
+            <a target="_blank" href="https://adaptable.io/docs/starters/nestjs-mongo-starter#what-s-next" style="background: #363795; padding: 13px 30px; border-radius: 30px; color: #fff; font-size:18px; text-decoration: none;">Go to the Starter Guide</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- REMOVE MESSAGE END -->
+
+    <h1 class="text-center" id="todo">NestJS + MongoDB</h1>
+    <h2 class="text-center">To Do List</h2>
+
+    <section style="background-color:rgb(4 0 255 / 6%);">
+      <div class="container-lg p-5">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col col-xl-10">
+
+            <div class="card">
+              <div class="card-body p-5">
+
+                <form class="d-flex justify-content-center align-items-center mb-4" id="todo-form">
+                  <div class="form-outline flex-fill">
+                    <input type="text" id="add-input" class="form-control" />
+                    <label class="form-label" for="add-input">New task...</label>
+                  </div>
+                  <button type="submit" class="btn btn-info ms-2">Add</button>
+                </form>
+
+                <ul class="list-group mb-0" id="todo-list" />
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js" ></script>
+    <script type="text/javascript" src="../js/client.js" ></script>
+
+  </body>
+</html>
